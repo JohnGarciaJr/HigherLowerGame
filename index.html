@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+  </head>
+  <body>
+    <h1 class="animate__animated animate__heartBeat animate__infinite">Let's Play</h1>
+    <h1 class="animate__animated animate__lightSpeedInLeft animate__delay-1s animate_infinite">The Higher-Lower Game!</h1>
+    <h3>Guess The Magic Number Between 1 and 100.</h3>
+    <h6>
+      <!-- This element will be updated from javascript with the remaining number of guesses. -->
+      <span id="remaining-guesses">5</span> 
+      Guesses Remaining.
+    </h6>
+
+    <!-- This element's value will be checked from javascript when a new guess is made. -->
+    <input id="guess-input" type="number">
+
+    <!-- TODO:: Add a guess button that calls handleGuess function when clicked -->
+    <button id="submit-guess" type="button" onclick="handleGuess()" class="animate__animated animate__zoomInDown animate__delay-3s">Submit Your Guess!</button>
+    <!-- This element contains each of the possible messages to the user. We will selectively remove the "hidden" class from one element at a time using javascript. -->
+    <div id="message-container">
+      <div id="higher-message" class="hidden">Higher ⬆️</div>
+      <div id="lower-message" class="hidden">Lower ⬇️</div>
+      <div id="win-message" class="hidden">
+        You Win!
+        <!-- TODO:: Add a play again button here. -->
+        <button id="play-again" type="button" onclick="handlePlayAgain()">Play Again?</button>
+      </div>
+      <div id="lose-message" class="hidden">
+        You Lose :(
+        <!-- TODO:: Add a play again button here. -->
+        <button id="play-again" type="button" onclick="handlePlayAgain()">Play Again?</button>
+      </div>
+    </div>
+    <script src="provided.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

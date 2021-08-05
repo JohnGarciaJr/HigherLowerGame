@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background-image: url('brain.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  text-shadow: .5px .5px lightskyblue;
+  color: whitesmoke;
+}
